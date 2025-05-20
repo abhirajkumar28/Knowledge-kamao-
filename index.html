@@ -1,0 +1,1162 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A2zbook.In - ऑनलाइन पैसा कमाने के प्रोफेशनल कोर्स</title>
+    <meta name="description" content="A2zbook.In - ऑनलाइन पैसा कमाने के बेस्ट कोर्सेज। Lite, Silver, Gold, Diamond और Platinum पैकेज उपलब्ध">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="keywords" content="ऑनलाइन पैसा कमाएं, E-Book, डिजिटल मार्केटिंग, फ्रीलांसिंग, A2zbook">
+    <meta name="author" content="A2zbook.In">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="https://a2zbook.in/favicon.ico" type="image/x-icon">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Hind:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary: #2563eb;
+            --secondary: #10b981;
+            --accent: #f59e0b;
+            --dark: #1e293b;
+            --light: #f8fafc;
+            --gray: #94a3b8;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Hind', 'Poppins', sans-serif;
+            background-color: var(--light);
+            color: var(--dark);
+            line-height: 1.6;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        /* Header Styles */
+        header {
+            background-color: white;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
+        
+        .logo-img {
+            height: 40px;
+            margin-right: 10px;
+        }
+        
+        .logo-text {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--primary);
+        }
+        
+        .logo-text span {
+            color: var(--secondary);
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 25px;
+            position: relative;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 600;
+            font-size: 16px;
+            transition: color 0.3s;
+            display: flex;
+            align-items: center;
+        }
+        
+        nav ul li a:hover {
+            color: var(--primary);
+        }
+        
+        nav ul li a i {
+            margin-left: 5px;
+            font-size: 14px;
+        }
+        
+        .mobile-menu {
+            display: none;
+            font-size: 24px;
+            cursor: pointer;
+            color: var(--dark);
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #2563eb, #1e40af);
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+            opacity: 0.1;
+            z-index: 0;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .hero h1 {
+            font-size: 2.8rem;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: var(--secondary);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 5px;
+        }
+        
+        .btn:hover {
+            background-color: #0ca678;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        .btn-outline {
+            background-color: transparent;
+            border: 2px solid white;
+            color: white;
+        }
+        
+        .btn-outline:hover {
+            background-color: white;
+            color: var(--primary);
+        }
+        
+        .btn-accent {
+            background-color: var(--accent);
+        }
+        
+        .btn-accent:hover {
+            background-color: #e67e22;
+        }
+        
+        /* Features Section */
+        .features {
+            padding: 80px 0;
+            background-color: white;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .section-title h2 {
+            font-size: 2.2rem;
+            color: var(--primary);
+            margin-bottom: 15px;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background-color: var(--secondary);
+            border-radius: 2px;
+        }
+        
+        .section-title p {
+            color: var(--gray);
+            max-width: 700px;
+            margin: 0 auto;
+            font-size: 1.1rem;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .feature-card {
+            background-color: var(--light);
+            border-radius: 10px;
+            padding: 30px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: 1px solid #e2e8f0;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .feature-icon {
+            width: 80px;
+            height: 80px;
+            background-color: rgba(16, 185, 129, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            color: var(--secondary);
+            font-size: 32px;
+        }
+        
+        .feature-card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            color: var(--dark);
+        }
+        
+        .feature-card p {
+            color: var(--gray);
+            font-size: 1rem;
+        }
+        
+        /* Packages Section */
+        .packages-section {
+            padding: 80px 0;
+            background-color: #f1f5f9;
+        }
+        
+        .packages {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .package-card {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+            position: relative;
+        }
+        
+        .package-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .package-badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background-color: var(--accent);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            z-index: 1;
+        }
+        
+        .package-header {
+            padding: 25px;
+            text-align: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .package-header::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 20px;
+            background-color: white;
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 50% 50%);
+            transform: translateY(50%);
+        }
+        
+        .lite .package-header {
+            background: linear-gradient(135deg, #94a3b8, #64748b);
+        }
+        
+        .silver .package-header {
+            background: linear-gradient(135deg, #a1a1aa, #71717a);
+        }
+        
+        .gold .package-header {
+            background: linear-gradient(135deg, #f59e0b, #d97706);
+        }
+        
+        .diamond .package-header {
+            background: linear-gradient(135deg, #06b6d4, #0891b2);
+        }
+        
+        .platinum .package-header {
+            background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+        }
+        
+        .package-header h3 {
+            font-size: 1.6rem;
+            margin-bottom: 5px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .package-price {
+            font-size: 2.5rem;
+            font-weight: 700;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .package-price span {
+            font-size: 1rem;
+            font-weight: normal;
+        }
+        
+        .package-body {
+            padding: 30px;
+        }
+        
+        .package-features {
+            list-style: none;
+            margin-bottom: 30px;
+        }
+        
+        .package-features li {
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            align-items: center;
+            font-size: 0.95rem;
+        }
+        
+        .package-features li i {
+            color: var(--secondary);
+            margin-right: 10px;
+            font-size: 14px;
+        }
+        
+        .package-btn {
+            display: block;
+            width: 100%;
+            text-align: center;
+            padding: 12px;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+        
+        .lite .package-btn {
+            background-color: #64748b;
+            color: white;
+        }
+        
+        .silver .package-btn {
+            background-color: #71717a;
+            color: white;
+        }
+        
+        .gold .package-btn {
+            background-color: #d97706;
+            color: white;
+        }
+        
+        .diamond .package-btn {
+            background-color: #0891b2;
+            color: white;
+        }
+        
+        .platinum .package-btn {
+            background-color: #7c3aed;
+            color: white;
+        }
+        
+        .package-btn:hover {
+            opacity: 0.9;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Testimonials Section */
+        .testimonials {
+            padding: 80px 0;
+            background-color: white;
+        }
+        
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .testimonial-card {
+            background-color: var(--light);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            position: relative;
+        }
+        
+        .testimonial-card::before {
+            content: '\201C';
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 5rem;
+            color: rgba(16, 185, 129, 0.1);
+            font-family: serif;
+            line-height: 1;
+        }
+        
+        .testimonial-content {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 20px;
+            color: var(--dark);
+            font-size: 1rem;
+        }
+        
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+        }
+        
+        .author-img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 15px;
+            border: 3px solid var(--secondary);
+        }
+        
+        .author-info h4 {
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+            color: var(--dark);
+        }
+        
+        .author-info p {
+            font-size: 0.9rem;
+            color: var(--gray);
+        }
+        
+        /* CTA Section */
+        .cta {
+            padding: 100px 0;
+            background: linear-gradient(135deg, var(--primary), #1e40af);
+            color: white;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .cta::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+            opacity: 0.1;
+            z-index: 0;
+        }
+        
+        .cta-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .cta h2 {
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+        }
+        
+        .cta p {
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--dark);
+            color: white;
+            padding: 60px 0 20px;
+        }
+        
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-col h3 {
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        .footer-col h3::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 50px;
+            height: 3px;
+            background-color: var(--secondary);
+        }
+        
+        .footer-col p {
+            color: #cbd5e1;
+            margin-bottom: 20px;
+            font-size: 0.95rem;
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+        
+        .footer-links a {
+            color: #cbd5e1;
+            text-decoration: none;
+            transition: color 0.3s;
+            font-size: 0.95rem;
+            display: flex;
+            align-items: center;
+        }
+        
+        .footer-links a:hover {
+            color: white;
+        }
+        
+        .footer-links a i {
+            margin-right: 8px;
+            font-size: 14px;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: #334155;
+            border-radius: 50%;
+            color: white;
+            transition: all 0.3s;
+        }
+        
+        .social-links a:hover {
+            background-color: var(--secondary);
+            transform: translateY(-3px);
+        }
+        
+        .contact-info {
+            list-style: none;
+        }
+        
+        .contact-info li {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: flex-start;
+            color: #cbd5e1;
+            font-size: 0.95rem;
+        }
+        
+        .contact-info li i {
+            margin-right: 10px;
+            font-size: 16px;
+            color: var(--secondary);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #334155;
+            color: #94a3b8;
+            font-size: 0.9rem;
+        }
+        
+        /* Responsive Styles */
+        @media (max-width: 992px) {
+            .hero h1 {
+                font-size: 2.4rem;
+            }
+            
+            .section-title h2 {
+                font-size: 2rem;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .header-container {
+                padding: 15px;
+            }
+            
+            nav {
+                position: fixed;
+                top: 0;
+                left: -100%;
+                width: 80%;
+                height: 100vh;
+                background-color: white;
+                box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+                transition: left 0.3s;
+                z-index: 999;
+                padding-top: 80px;
+            }
+            
+            nav.active {
+                left: 0;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                padding: 20px;
+            }
+            
+            nav ul li {
+                margin: 15px 0;
+            }
+            
+            .mobile-menu {
+                display: block;
+                z-index: 1000;
+            }
+            
+            .hero {
+                padding: 80px 0;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero p {
+                font-size: 1rem;
+            }
+            
+            .section-title h2 {
+                font-size: 1.8rem;
+            }
+            
+            .package-price {
+                font-size: 2rem;
+            }
+            
+            .cta h2 {
+                font-size: 1.8rem;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            
+            .btn {
+                display: block;
+                width: 100%;
+                margin: 10px 0;
+            }
+            
+            .footer-col {
+                text-align: center;
+            }
+            
+            .footer-col h3::after {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            
+            .social-links {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <img src="https://via.placeholder.com/40x40" alt="A2zbook Logo" class="logo-img">
+                <span class="logo-text">A2z<span>book</span>.In</span>
+            </a>
+            
+            <nav id="nav">
+                <ul>
+                    <li><a href="#home">होम</a></li>
+                    <li><a href="#features">विशेषताएँ</a></li>
+                    <li><a href="#packages">पैकेजेस</a></li>
+                    <li><a href="#testimonials">समीक्षाएँ</a></li>
+                    <li><a href="#contact">संपर्क करें <i class="fas fa-chevron-down"></i></a></li>
+                </ul>
+            </nav>
+            
+            <div class="mobile-menu" id="mobileMenu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>ऑनलाइन पैसा कमाने की सीखें प्रोफेशनल स्किल्स</h1>
+            <p>A2zbook.In के प्रीमियम E-Book कोर्सेज के साथ डिजिटल दुनिया में सफलता की शुरुआत करें। हमारे विशेषज्ञों द्वारा डिज़ाइन किए गए कोर्सेज से आज ही सीखना शुरू करें।</p>
+            <div>
+                <a href="#packages" class="btn btn-accent">कोर्स देखें</a>
+                <a href="#contact" class="btn btn-outline">मुफ्त सलाह लें</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-title">
+                <h2>हमारी विशेषताएँ</h2>
+                <p>A2zbook.In के साथ ऑनलाइन पैसा कमाने के लिए सर्वश्रेष्ठ सीखने का अनुभव प्राप्त करें</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <h3>व्यापक E-Books</h3>
+                    <p>40+ प्रोफेशनल E-Books जो ऑनलाइन पैसा कमाने के सभी पहलुओं को कवर करती हैं</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3>वीडियो ट्यूटोरियल</h3>
+                    <p>100+ घंटे के विस्तृत वीडियो ट्यूटोरियल जो आपको प्रैक्टिकल स्किल्स सिखाते हैं</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <h3>विशेषज्ञ मार्गदर्शन</h3>
+                    <p>इंडस्ट्री एक्सपर्ट्स से 1-ऑन-1 मेंटरिंग और गाइडेंस प्राप्त करें</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>प्रैक्टिकल टूल्स</h3>
+                    <p>ऑनलाइन कमाई शुरू करने के लिए आवश्यक सभी टूल्स और टेम्पलेट्स</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>24/7 सपोर्ट</h3>
+                    <p>किसी भी प्रश्न के लिए हमारी डेडिकेटेड सपोर्ट टीम हमेशा तैयार</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>जॉब असिस्टेंस</h3>
+                    <p>फ्रीलांसिंग और रिमोट जॉब्स पाने में मदद करने के लिए विशेष सहायता</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Packages Section -->
+    <section class="packages-section" id="packages">
+        <div class="container">
+            <div class="section-title">
+                <h2>हमारे पैकेजेस</h2>
+                <p>अपनी जरूरत और बजट के अनुसार सही पैकेज चुनें और ऑनलाइन पैसा कमाना शुरू करें</p>
+            </div>
+            
+            <div class="packages">
+                <!-- Lite Package -->
+                <div class="package-card lite">
+                    <div class="package-header">
+                        <h3>Lite पैकेज</h3>
+                        <div class="package-price">₹499 <span>/महीना</span></div>
+                    </div>
+                    <div class="package-body">
+                        <ul class="package-features">
+                            <li><i class="fas fa-check"></i> 5 बेसिक E-Books</li>
+                            <li><i class="fas fa-check"></i> ऑनलाइन पैसा कमाने के 10 तरीके</li>
+                            <li><i class="fas fa-check"></i> सप्ताहिक ईमेल सपोर्ट</li>
+                            <li><i class="fas fa-check"></i> बेसिक रिसोर्स मटेरियल</li>
+                            <li><i class="fas fa-check"></i> प्रारंभिक गाइडेंस</li>
+                        </ul>
+                        <a href="#" class="package-btn">अभी खरीदें</a>
+                    </div>
+                </div>
+                
+                <!-- Silver Package -->
+                <div class="package-card silver">
+                    <div class="package-header">
+                        <h3>Silver पैकेज</h3>
+                        <div class="package-price">₹1,499 <span>/महीना</span></div>
+                    </div>
+                    <div class="package-body">
+                        <ul class="package-features">
+                            <li><i class="fas fa-check"></i> 10 प्रोफेशनल E-Books</li>
+                            <li><i class="fas fa-check"></i> फ्रीलांसिंग गाइड</li>
+                            <li><i class="fas fa-check"></i> वीडियो ट्यूटोरियल (10+ घंटे)</li>
+                            <li><i class="fas fa-check"></i> प्राथमिकता ईमेल सपोर्ट</li>
+                            <li><i class="fas fa-check"></i> टेम्पलेट्स और टूल्स</li>
+                            <li><i class="fas fa-check"></i> मासिक Q&A सेशन</li>
+                        </ul>
+                        <a href="#" class="package-btn">अभी खरीदें</a>
+                    </div>
+                </div>
+                
+                <!-- Gold Package -->
+                <div class="package-card gold">
+                    <div class="package-badge">सबसे लोकप्रिय</div>
+                    <div class="package-header">
+                        <h3>Gold पैकेज</h3>
+                        <div class="package-price">₹2,999 <span>/महीना</span></div>
+                    </div>
+                    <div class="package-body">
+                        <ul class="package-features">
+                            <li><i class="fas fa-check"></i> 15 प्रीमियम E-Books</li>
+                            <li><i class="fas fa-check"></i> फ्रीलांसिंग + डिजिटल मार्केटिंग</li>
+                            <li><i class="fas fa-check"></i> वीडियो ट्यूटोरियल (30+ घंटे)</li>
+                            <li><i class="fas fa-check"></i> लाइव Q&A सेशन (मासिक)</li>
+                            <li><i class="fas fa-check"></i> एक्सक्लूसिव टूल्स और टेम्पलेट्स</li>
+                            <li><i class="fas fa-check"></i> प्राथमिकता चैट सपोर्ट</li>
+                            <li><i class="fas fa-check"></i> साप्ताहिक असाइनमेंट</li>
+                        </ul>
+                        <a href="#" class="package-btn">अभी खरीदें</a>
+                    </div>
+                </div>
+                
+                <!-- Diamond Package -->
+                <div class="package-card diamond">
+                    <div class="package-header">
+                        <h3>Diamond पैकेज</h3>
+                        <div class="package-price">₹4,999 <span>/महीना</span></div>
+                    </div>
+                    <div class="package-body">
+                        <ul class="package-features">
+                            <li><i class="fas fa-check"></i> 25 प्रीमियम E-Books</li>
+                            <li><i class="fas fa-check"></i> कंप्लीट डिजिटल मार्केटिंग कोर्स</li>
+                            <li><i class="fas fa-check"></i> वीडियो ट्यूटोरियल (50+ घंटे)</li>
+                            <li><i class="fas fa-check"></i> वीकली लाइव सेशन</li>
+                            <li><i class="fas fa-check"></i> पर्सनलाइज्ड मेंटरिंग</li>
+                            <li><i class="fas fa-check"></i> प्रीमियम टूल्स एक्सेस</li>
+                            <li><i class="fas fa-check"></i> प्रोजेक्ट रिव्यू</li>
+                        </ul>
+                        <a href="#" class="package-btn">अभी खरीदें</a>
+                    </div>
+                </div>
+                
+                <!-- Platinum Package -->
+                <div class="package-card platinum">
+                    <div class="package-header">
+                        <h3>Platinum पैकेज</h3>
+                        <div class="package-price">₹7,999 <span>/महीना</span></div>
+                    </div>
+                    <div class="package-body">
+                        <ul class="package-features">
+                            <li><i class="fas fa-check"></i> 40+ प्रीमियम E-Books</li>
+                            <li><i class="fas fa-check"></i> एडवांस्ड डिजिटल मार्केटिंग</li>
+                            <li><i class="fas fa-check"></i> वीडियो ट्यूटोरियल (100+ घंटे)</li>
+                            <li><i class="fas fa-check"></i> डेली लाइव सेशन</li>
+                            <li><i class="fas fa-check"></i> 1-ऑन-1 मेंटरिंग</li>
+                            <li><i class="fas fa-check"></i> सभी प्रीमियम टूल्स</li>
+                            <li><i class="fas fa-check"></i> जॉब प्लेसमेंट असिस्टेंस</li>
+                            <li><i class="fas fa-check"></i> प्रोफाइल ऑप्टिमाइजेशन</li>
+                        </ul>
+                        <a href="#" class="package-btn">अभी खरीदें</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>हमारे छात्र क्या कहते हैं</h2>
+                <p>हमारे छात्रों की सफलता की कहानियाँ जो A2zbook.In के कोर्सेज से ऑनलाइन पैसा कमा रहे हैं</p>
+            </div>
+            
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">"A2zbook के Gold पैकेज ने मुझे फ्रीलांसिंग शुरू करने में मदद की। पहले महीने में ही मैंने ₹25,000 कमाए और अब मैं हर महीने 50,000+ रुपये कमा रहा हूँ। धन्यवाद!"</p>
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="राहुल शर्मा" class="author-img">
+                            <div class="author-info">
+                                <h4>राहुल शर्मा</h4>
+                                <p>फ्रीलांसर, ग्राफिक डिजाइनर</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">"Diamond पैकेज के डिजिटल मार्केटिंग कोर्स ने मेरे बिजनेस को नई ऊँचाइयों पर पहुँचाया। मेरा ROI 300% से अधिक हो गया है और मेरे क्लाइंट्स की संख्या दोगुनी हो चुकी है।"</p>
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="प्रिया पटेल" class="author-img">
+                            <div class="author-info">
+                                <h4>प्रिया पटेल</h4>
+                                <p>छोटा व्यवसाय मालिक</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">"Platinum पैकेज में 1-ऑन-1 मेंटरिंग बेहतरीन थी। 3 महीने में मैंने अपना खुद का डिजिटल एजेंसी शुरू कर दी और अब मैं 5 लोगों को नौकरी दे रहा हूँ। यह मेरे जीवन का सबसे अच्छा निवेश था!"</p>
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="विकास गुप्ता" class="author-img">
+                            <div class="author-info">
+                                <h4>विकास गुप्ता</h4>
+                                <p>डिजिटल मार्केटिंग एजेंसी के मालिक</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="cta-content">
+            <h2>आज ही शुरू करें अपनी डिजिटल यात्रा</h2>
+            <p>अपने सपनों के करियर की शुरुआत करने के लिए अभी सही पैकेज चुनें। 7-दिन की मनी-बैक गारंटी के साथ जोखिम-मुक्त।</p>
+            <a href="#packages" class="btn btn-accent">कोर्स चुनें</a>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>A2zbook.In</h3>
+                    <p>ऑनलाइन पैसा कमाने के प्रोफेशनल कोर्सेज और E-Books प्रदान करने वाली भारत की अग्रणी कंपनी।</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>लिंक्स</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home"><i class="fas fa-chevron-right"></i> होम</a></li>
+                        <li><a href="#features"><i class="fas fa-chevron-right"></i> विशेषताएँ</a></li>
+                        <li><a href="#packages"><i class="fas fa-chevron-right"></i> पैकेजेस</a></li>
+                        <li><a href="#testimonials"><i class="fas fa-chevron-right"></i> समीक्षाएँ</a></li>
+                        <li><a href="#contact"><i class="fas fa-chevron-right"></i> संपर्क</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>पैकेजेस</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Lite पैकेज</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Silver पैकेज</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Gold पैकेज</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Diamond पैकेज</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Platinum पैकेज</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>संपर्क करें</h3>
+                    <ul class="contact-info">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>A2zbook इंडिया, 123 बिजनेस पार्क, मुंबई, महाराष्ट्र 400001</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone-alt"></i>
+                            <span>+91 9876543210</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>support@a2zbook.in</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 A2zbook.In. सर्वाधिकार सुरक्षित।</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenu = document.getElementById('mobileMenu');
+        const nav = document.getElementById('nav');
+        
+        mobileMenu.addEventListener('click', () => {
+            nav.classList.toggle('active');
+            mobileMenu.classList.toggle('fa-times');
+        });
+        
+        // Smooth Scrolling for Anchor Links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    if (nav.classList.contains('active')) {
+                        nav.classList.remove('active');
+                        mobileMenu.classList.remove('fa-times');
+                    }
+                }
+            });
+        });
+        
+        // Sticky Header on Scroll
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            header.classList.toggle('sticky', window.scrollY > 0);
+        });
+        
+        // FAQ Accordion
+        const faqItems = document.querySelectorAll('.faq-item');
+        
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            
+            question.addEventListener('click', () => {
+                // Close other open items
+                faqItems.forEach(otherItem => {
+                    if (otherItem !== item && otherItem.classList.contains('active')) {
+                        otherItem.classList.remove('active');
+                    }
+                });
+                
+                // Toggle current item
+                item.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>
