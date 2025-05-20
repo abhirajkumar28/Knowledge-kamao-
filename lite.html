@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lite Package - A2zbook.In | सोशल मीडिया मास्टरी कोर्स</title>
+    <meta name="description" content="A2zbook.In का Lite पैकेज - प्रीमियर प्रो, फोटोशॉप, कैनवा प्रो और व्लॉगिंग कोर्सेज के साथ सोशल मीडिया पर मजबूत पहचान बनाएं।">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="keywords" content="सोशल मीडिया कोर्स, प्रीमियर प्रो, फोटोशॉप, कैनवा प्रो, व्लॉगिंग, ऑनलाइन कोर्स">
+    <meta name="author" content="A2zbook.In">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="https://a2zbook.in/favicon.ico" type="image/x-icon">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Hind:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary: #2563eb;
+            --secondary: #10b981;
+            --accent: #f59e0b;
+            --dark: #1e293b;
+            --light: #f8fafc;
+            --gray: #94a3b8;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Hind', 'Poppins', sans-serif;
+            background-color: var(--light);
+            color: var(--dark);
+            line-height: 1.6;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        /* Header Styles */
+        header {
+            background-color: white;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
+        
+        .logo-img {
+            height: 40px;
+            margin-right: 10px;
+        }
+        
+        .logo-text {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--primary);
+        }
+        
+        .logo-text span {
+            color: var(--secondary);
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 25px;
+            position: relative;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 600;
+            font-size: 16px;
+            transition: color 0.3s;
+            display: flex;
+            align-items: center;
+        }
+        
+        nav ul li a:hover {
+            color: var(--primary);
+        }
+        
+        nav ul li a i {
+            margin-left: 5px;
+            font-size: 14px;
+        }
+        
+        .mobile-menu {
+            display: none;
+            font-size: 24px;
+            cursor: pointer;
+            color: var(--dark);
+        }
+        
+        /* Hero Section */
+        .package-hero {
+            background: linear-gradient(135deg, #94a3b8, #64748b);
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .package-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+            opacity: 0.2;
+            z-index: 0;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .package-hero h1 {
+            font-size: 2.8rem;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        
+        .package-hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: var(--secondary);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 5px;
+        }
+        
+        .btn:hover {
+            background-color: #0ca678;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        .btn-outline {
+            background-color: transparent;
+            border: 2px solid white;
+            color: white;
+        }
+        
+        .btn-outline:hover {
+            background-color: white;
+            color: var(--primary);
+        }
+        
+        .btn-accent {
+            background-color: var(--accent);
+        }
+        
+        .btn-accent:hover {
+            background-color: #e67e22;
+        }
+        
+        /* Package Details Section */
+        .package-details {
+            padding: 80px 0;
+            background-color: white;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .section-title h2 {
+            font-size: 2.2rem;
+            color: var(--primary);
+            margin-bottom: 15px;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background-color: var(--secondary);
+            border-radius: 2px;
+        }
+        
+        .section-title p {
+            color: var(--gray);
+            max-width: 700px;
+            margin: 0 auto;
+            font-size: 1.1rem;
+        }
+        
+        .overview-card {
+            background-color: var(--light);
+            border-radius: 10px;
+            padding: 40px;
+            margin-bottom: 40px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .overview-card h3 {
+            font-size: 1.6rem;
+            margin-bottom: 20px;
+            color: var(--dark);
+        }
+        
+        .overview-card p {
+            color: var(--gray);
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+        
+        .course-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .course-card {
+            background-color: var(--light);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .course-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .course-img {
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .course-content {
+            padding: 25px;
+        }
+        
+        .course-content h4 {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            color: var(--dark);
+        }
+        
+        .course-content p {
+            color: var(--gray);
+            margin-bottom: 20px;
+        }
+        
+        .course-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+        }
+        
+        .course-duration {
+            display: flex;
+            align-items: center;
+            color: var(--gray);
+            font-size: 0.9rem;
+        }
+        
+        .course-duration i {
+            margin-right: 5px;
+            color: var(--secondary);
+        }
+        
+        /* Pricing Section */
+        .pricing-section {
+            padding: 60px 0;
+            background-color: #f1f5f9;
+        }
+        
+        .pricing-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 40px;
+            text-align: center;
+            max-width: 600px;
+            margin: 0 auto;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .pricing-card h3 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: var(--dark);
+        }
+        
+        .price {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+        
+        .price span {
+            font-size: 1.2rem;
+            font-weight: normal;
+            color: var(--gray);
+        }
+        
+        .pricing-features {
+            list-style: none;
+            margin-bottom: 30px;
+        }
+        
+        .pricing-features li {
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .pricing-features li i {
+            color: var(--secondary);
+            margin-right: 10px;
+        }
+        
+        /* Testimonials Section */
+        .testimonials {
+            padding: 80px 0;
+            background-color: white;
+        }
+        
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .testimonial-card {
+            background-color: var(--light);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            position: relative;
+        }
+        
+        .testimonial-card::before {
+            content: '\201C';
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 5rem;
+            color: rgba(16, 185, 129, 0.1);
+            font-family: serif;
+            line-height: 1;
+        }
+        
+        .testimonial-content {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 20px;
+            color: var(--dark);
+            font-size: 1rem;
+        }
+        
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+        }
+        
+        .author-img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 15px;
+            border: 3px solid var(--secondary);
+        }
+        
+        .author-info h4 {
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+            color: var(--dark);
+        }
+        
+        .author-info p {
+            font-size: 0.9rem;
+            color: var(--gray);
+        }
+        
+        /* FAQ Section */
+        .faq-section {
+            padding: 80px 0;
+            background-color: #f1f5f9;
+        }
+        
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .faq-item {
+            background-color: white;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+        }
+        
+        .faq-question {
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            font-weight: 600;
+            background-color: var(--light);
+        }
+        
+        .faq-question i {
+            transition: transform 0.3s;
+        }
+        
+        .faq-answer {
+            padding: 0 20px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s, padding 0.3s;
+        }
+        
+        .faq-item.active .faq-question i {
+            transform: rotate(180deg);
+        }
+        
+        .faq-item.active .faq-answer {
+            max-height: 500px;
+            padding: 20px;
+        }
+        
+        /* CTA Section */
+        .cta-section {
+            padding: 80px 0;
+            background: linear-gradient(135deg, var(--primary), #1e40af);
+            color: white;
+            text-align: center;
+        }
+        
+        .cta-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .cta-content h2 {
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+        }
+        
+        .cta-content p {
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--dark);
+            color: white;
+            padding: 60px 0 20px;
+        }
+        
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-col h3 {
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        .footer-col h3::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 50px;
+            height: 3px;
+            background-color: var(--secondary);
+        }
+        
+        .footer-col p {
+            color: #cbd5e1;
+            margin-bottom: 20px;
+            font-size: 0.95rem;
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+        
+        .footer-links a {
+            color: #cbd5e1;
+            text-decoration: none;
+            transition: color 0.3s;
+            font-size: 0.95rem;
+            display: flex;
+            align-items: center;
+        }
+        
+        .footer-links a:hover {
+            color: white;
+        }
+        
+        .footer-links a i {
+            margin-right: 8px;
+            font-size: 14px;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: #334155;
+            border-radius: 50%;
+            color: white;
+            transition: all 0.3s;
+        }
+        
+        .social-links a:hover {
+            background-color: var(--secondary);
+            transform: translateY(-3px);
+        }
+        
+        .contact-info {
+            list-style: none;
+        }
+        
+        .contact-info li {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: flex-start;
+            color: #cbd5e1;
+            font-size: 0.95rem;
+        }
+        
+        .contact-info li i {
+            margin-right: 10px;
+            font-size: 16px;
+            color: var(--secondary);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #334155;
+            color: #94a3b8;
+            font-size: 0.9rem;
+        }
+        
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .header-container {
+                padding: 15px;
+            }
+            
+            nav {
+                position: fixed;
+                top: 0;
+                left: -100%;
+                width: 80%;
+                height: 100vh;
+                background-color: white;
+                box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+                transition: left 0.3s;
+                z-index: 999;
+                padding-top: 80px;
+            }
+            
+            nav.active {
+                left: 0;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                padding: 20px;
+            }
+            
+            nav ul li {
+                margin: 15px 0;
+            }
+            
+            .mobile-menu {
+                display: block;
+                z-index: 1000;
+            }
+            
+            .package-hero h1 {
+                font-size: 2rem;
+            }
+            
+            .package-hero p {
+                font-size: 1rem;
+            }
+            
+            .section-title h2 {
+                font-size: 1.8rem;
+            }
+            
+            .price {
+                font-size: 2.5rem;
+            }
+            
+            .cta-content h2 {
+                font-size: 1.8rem;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .package-hero h1 {
+                font-size: 1.8rem;
+            }
+            
+            .btn {
+                display: block;
+                width: 100%;
+                margin: 10px 0;
+            }
+            
+            .overview-card {
+                padding: 25px;
+            }
+            
+            .course-list {
+                grid-template-columns: 1fr;
+            }
+            
+            .footer-col {
+                text-align: center;
+            }
+            
+            .footer-col h3::after {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            
+            .social-links {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <img src="https://via.placeholder.com/40x40" alt="A2zbook Logo" class="logo-img">
+                <span class="logo-text">A2z<span>book</span>.In</span>
+            </a>
+            
+            <nav id="nav">
+                <ul>
+                    <li><a href="index.html">होम</a></li>
+                    <li><a href="index.html#packages">पैकेजेस</a></li>
+                    <li><a href="index.html#testimonials">समीक्षाएँ</a></li>
+                    <li><a href="#contact">संपर्क करें <i class="fas fa-chevron-down"></i></a></li>
+                </ul>
+            </nav>
+            
+            <div class="mobile-menu" id="mobileMenu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Hero Section -->
+    <section class="package-hero">
+        <div class="hero-content">
+            <h1>Lite पैकेज - सोशल मीडिया मास्टरी</h1>
+            <p>प्रीमियर प्रो, फोटोशॉप, कैनवा प्रो और व्लॉगिंग कोर्सेज के साथ सोशल मीडिया पर मजबूत पहचान बनाएं</p>
+            <div>
+                <a href="#pricing" class="btn btn-accent">अभी खरीदें (₹499)</a>
+                <a href="#course-details" class="btn btn-outline">कोर्स विवरण देखें</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Package Details Section -->
+    <section class="package-details" id="course-details">
+        <div class="container">
+            <div class="overview-card">
+                <h3>कोर्स अवलोकन</h3>
+                <p>क्या आप एक मजबूत सोशल मीडिया उपस्थिति बनाना पसंद नहीं करेंगे? यदि आप एक उद्यमी या एक शुरुआत करने वाले हैं जो एक क्रांतिकारी प्रभाव बनाने का सपना देखते हैं, तो यह पैकेज आपकी आवश्यकताओं के अनुरूप है। इस कोर्स के साथ, अब आप एक अंतर बनाने और सोशल मीडिया रुझानों को सीखने में आत्मविश्वास महसूस कर सकते हैं जो आपको भीड़ से अलग खड़ा करने में मदद करेंगे।</p>
+                <p>यह Lite पैकेज विशेष रूप से शुरुआती लोगों के लिए डिज़ाइन किया गया है जो सोशल मीडिया पर अपनी उपस्थिति बनाना चाहते हैं और डिजिटल दुनिया में अपनी पहचान स्थापित करना चाहते हैं।</p>
+            </div>
+            
+            <div class="section-title">
+                <h2>आप क्या सीखेंगे?</h2>
+                <p>इस Lite पैकेज में शामिल सभी कोर्सेज की विस्तृत जानकारी</p>
+            </div>
+            
+            <div class="course-list">
+                <!-- Premiere Pro Advance Course -->
+                <div class="course-card">
+                    <div class="course-img" style="background-image: url('https://images.unsplash.com/photo-1626785774573-4b799315345d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80');"></div>
+                    <div class="course-content">
+                        <h4>Premiere Pro Advance Course</h4>
+                        <p>एडोब प्रीमियर प्रो में पेशेवर वीडियो एडिटिंग सीखें। इस कोर्स में आप कटिंग, ट्रांजिशन, एफेक्ट्स, कलर ग्रेडिंग और बहुत कुछ सीखेंगे।</p>
+                        <div class="course-meta">
+                            <span class="course-duration"><i class="fas fa-clock"></i> 15 घंटे</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Premiere Pro Basic Course -->
+                <div class="course-card">
+                    <div class="course-img" style="background-image: url('https://images.unsplash.com/photo-1551269901-5c5e14c25df7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80');"></div>
+                    <div class="course-content">
+                        <h4>Premiere Pro Course</h4>
+                        <p>प्रीमियर प्रो की बेसिक्स से शुरुआत करें। इंटरफेस, टाइमलाइन, बेसिक एडिटिंग टूल्स और सरल वीडियो प्रोजेक्ट्स बनाना सीखें।</p>
+                        <div class="course-meta">
+                            <span class="course-duration"><i class="fas fa-clock"></i> 10 घंटे</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Photoshop Course -->
+                <div class="course-card">
+                    <div class="course-img" style="background-image: url('https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80');"></div>
+                    <div class="course-content">
+                        <h4>Photoshop Course</h4>
+                        <p>फोटोशॉप में इमेज एडिटिंग और ग्राफिक डिजाइन की मूल बातें सीखें। लेयर्स, मास्क्स, टेक्स्ट एफेक्ट्स और बेसिक डिजाइन तकनीकों में महारत हासिल करें।</p>
+                        <div class="course-meta">
+                            <span class="course-duration"><i class="fas fa-clock"></i> 12 घंटे</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Canva Pro Course -->
+                <div class="course-card">
+                    <div class="course-img" style="background-image: url('https://images.unsplash.com/photo-1633356122544-f134324a6cee?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80');"></div>
+                    <div class="course-content">
+                        <h4>Canva Pro Course</h4>
+                        <p>कैनवा प्रो के साथ पेशेवर डिजाइन बनाना सीखें। सोशल मीडिया पोस्ट, लोगो, प्रेजेंटेशन और अन्य मार्केटिंग मटेरियल बनाने के तरीके जानें।</p>
+                        <div class="course-meta">
+                            <span class="course-duration"><i class="fas fa-clock"></i> 8 घंटे</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Vlog Now Course -->
+                <div class="course-card">
+                    <div class="course-img" style="background-image: url('https://images.unsplash.com/photo-1571902943202-507ec2618e8f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80');"></div>
+                    <div class="course-content">
+                        <h4>Vlog Now Course</h4>
+                        <p>व्लॉगिंग की दुनिया में कदम रखें। इस कोर्स में आप व्लॉग शूट करने, एडिट करने और यूट्यूब पर अपलोड करने के सभी पहलुओं को सीखेंगे।</p>
+                        <div class="course-meta">
+                            <span class="course-duration"><i class="fas fa-clock"></i> 10 घंटे</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Pricing Section -->
+    <section class="pricing-section" id="pricing">
+        <div class="container">
+            <div class="pricing-card">
+                <h3>Lite पैकेज</h3>
+                <div class="price">₹499 <span>/महीना</span></div>
+                <ul class="pricing-features">
+                    <li><i class="fas fa-check"></i> 5 प्रोफेशनल कोर्सेज</li>
+                    <li><i class="fas fa-check"></i> 55+ घंटे का वीडियो कंटेंट</li>
+                    <li><i class="fas fa-check"></i> डाउनलोड करने योग्य संसाधन</li>
+                    <li><i class="fas fa-check"></i> साप्ताहिक ईमेल सपोर्ट</li>
+                    <li><i class="fas fa-check"></i> कोर्स पूरा होने पर प्रमाणपत्र</li>
+                </ul>
+                <a href="#" class="btn btn-accent" style="width: 100%;">अभी खरीदें</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>हमारे छात्र क्या कहते हैं</h2>
+                <p>Lite पैकेज से सोशल मीडिया स्किल्स सीखकर छात्रों ने कैसे बदली अपनी डिजिटल दुनिया</p>
+            </div>
+            
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">"Lite पैकेज के कैनवा प्रो कोर्स ने मुझे इंस्टाग्राम के लिए आकर्षक पोस्ट डिजाइन करना सिखाया। अब मैं अपने छोटे व्यवसाय के लिए पेशेवर मार्केटिंग मटेरियल खुद बना सकता हूँ।"</p>
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="प्रिया शर्मा" class="author-img">
+                            <div class="author-info">
+                                <h4>प्रिया शर्मा</h4>
+                                <p>छोटा व्यवसाय मालिक</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">"व्लॉग नाउ कोर्स ने मुझे यूट्यूब के लिए वीडियो बनाने और एडिट करने का आत्मविश्वास दिया। 3 महीने में मेरे चैनल के 1000 सब्सक्राइबर हो गए!"</p>
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="राजीव वर्मा" class="author-img">
+                            <div class="author-info">
+                                <h4>राजीव वर्मा</h4>
+                                <p>यूट्यूब व्लॉगर</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">"फोटोशॉप कोर्स ने मुझे बेसिक फोटो एडिटिंग स्किल्स सिखाईं जो मैं अपने सोशल मीडिया प्रोफाइल्स के लिए उपयोग करता हूँ। अब मैं अपनी तस्वीरों को पेशेवर तरीके से एडिट कर सकता हूँ।"</p>
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="नीतू सिंह" class="author-img">
+                            <div class="author-info">
+                                <h4>नीतू सिंह</h4>
+                                <p>सोशल मीडिया इन्फ्लुएंसर</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>अक्सर पूछे जाने वाले प्रश्न</h2>
+                <p>Lite पैकेज के बारे में छात्रों द्वारा पूछे गए सामान्य प्रश्न</p>
+            </div>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>क्या मुझे इस कोर्स के लिए कोई पूर्व अनुभव चाहिए?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>नहीं, Lite पैकेज विशेष रूप से शुरुआती लोगों के लिए डिज़ाइन किया गया है। सभी कोर्सेज बेसिक्स से शुरू होते हैं और धीरे-धीरे एडवांस्ड टॉपिक्स की ओर बढ़ते हैं।</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>कोर्स मटेरियल तक मेरी पहुँच कितने समय तक रहेगी?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>एक बार जब आप Lite पैकेज खरीद लेते हैं, तो आपको 1 वर्ष तक सभी कोर्स मटेरियल तक पहुँच प्राप्त होगी। आप किसी भी समय कोर्स कंटेंट देख और डाउनलोड कर सकते हैं।</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>क्या मैं कोर्स पूरा होने पर प्रमाणपत्र प्राप्त करूँगा?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>हाँ, Lite पैकेज में शामिल प्रत्येक कोर्स को सफलतापूर्वक पूरा करने पर आपको एक डिजिटल प्रमाणपत्र प्राप्त होगा जिसे आप अपने लिंक्डइन प्रोफाइल या रिज्यूमे में जोड़ सकते हैं।</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>क्या मैं पैकेज अपग्रेड कर सकता हूँ?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>हाँ, आप किसी भी समय अपना पैकेज Silver, Gold, Diamond या Platinum में अपग्रेड कर सकते हैं। आपको केवल दो पैकेजों के बीच के मूल्य अंतर का भुगतान करना होगा।</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>क्या कोई रिफंड पॉलिसी है?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>हम 7-दिन की मनी-बैक गारंटी प्रदान करते हैं। यदि आप कोर्सेज से संतुष्ट नहीं हैं, तो आप खरीद की तारीख से 7 दिनों के भीतर पूर्ण धनवापसी के लिए अनुरोध कर सकते हैं।</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-content">
+            <h2>आज ही शुरू करें अपनी सोशल मीडिया यात्रा</h2>
+            <p>Lite पैकेज के साथ सोशल मीडिया पर अपनी पेशेवर पहचान बनाएं। 7-दिन की मनी-बैक गारंटी के साथ जोखिम-मुक्त।</p>
+            <a href="#pricing" class="btn btn-accent">अभी खरीदें (₹499)</a>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>A2zbook.In</h3>
+                    <p>ऑनलाइन पैसा कमाने के प्रोफेशनल कोर्सेज और E-Books प्रदान करने वाली भारत की अग्रणी कंपनी।</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>लिंक्स</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> होम</a></li>
+                        <li><a href="index.html#packages"><i class="fas fa-chevron-right"></i> पैकेजेस</a></li>
+                        <li><a href="index.html#testimonials"><i class="fas fa-chevron-right"></i> समीक्षाएँ</a></li>
+                        <li><a href="#contact"><i class="fas fa-chevron-right"></i> संपर्क</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>पैकेजेस</h3>
+                    <ul class="footer-links">
+                        <li><a href="lite.html"><i class="fas fa-chevron-right"></i> Lite पैकेज</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Silver पैकेज</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Gold पैकेज</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Diamond पैकेज</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Platinum पैकेज</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>संपर्क करें</h3>
+                    <ul class="contact-info">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>A2zbook इंडिया, 123 बिजनेस पार्क, मुंबई, महाराष्ट्र 400001</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone-alt"></i>
+                            <span>+91 9876543210</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>support@a2zbook.in</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 A2zbook.In. सर्वाधिकार सुरक्षित।</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenu = document.getElementById('mobileMenu');
+        const nav = document.getElementById('nav');
+        
+        mobileMenu.addEventListener('click', () => {
+            nav.classList.toggle('active');
+            mobileMenu.classList.toggle('fa-times');
+        });
+        
+        // Smooth Scrolling for Anchor Links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    if (nav.classList.contains('active')) {
+                        nav.classList.remove('active');
+                        mobileMenu.classList.remove('fa-times');
+                    }
+                }
+            });
+        });
+        
+        // FAQ Accordion
+        const faqItems = document.querySelectorAll('.faq-item');
+        
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            
+            question.addEventListener('click', () => {
+                // Close other open items
+                faqItems.forEach(otherItem => {
+                    if (otherItem !== item && otherItem.classList.contains('active')) {
+                        otherItem.classList.remove('active');
+                    }
+                });
+                
+                // Toggle current item
+                item.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>
