@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A2zbook.In - ऑनलाइन पैसा कमाने के बेस्ट कोर्सेज. Lite, Silver, Gold, Diamond और Platinum पैकेज उपलब्ध">
+    <meta name="keywords" content="ऑनलाइन पैसा कमाएं, E-Book, डिजिटल मार्केटिंग, फ्रीलांसिंग, A2zbook">
+    <meta name="author" content="A2zbook.In">
+    <title>A2zbook.In - ऑनलाइन पैसा कमाने के प्रोफेशनल कोर्स</title>
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://a2zbook.in/">
+    <meta property="og:title" content="A2zbook.In - ऑनलाइन पैसा कमाने के कोर्स">
+    <meta property="og:description" content="ऑनलाइन पैसा कमाने के बेस्ट कोर्सेज. Lite, Silver, Gold, Diamond और Platinum पैकेज उपलब्ध">
+    <meta property="og:image" content="https://a2zbook.in/images/og-image.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://a2zbook.in/">
+    <meta property="twitter:title" content="A2zbook.In - ऑनलाइन पैसा कमाने के कोर्स">
+    <meta property="twitter:description" content="ऑनलाइन पैसा कमाने के बेस्ट कोर्सेज. Lite, Silver, Gold, Diamond और Platinum पैकेज उपलब्ध">
+    <meta property="twitter:image" content="https://a2zbook.in/images/og-image.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary: #4f46e5;
+            --secondary: #10b981;
+            --dark: #1e293b;
+            --light: #f8fafc;
+            --gray: #94a3b8;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        body {
+            background-color: var(--light);
+            color: var(--dark);
+            line-height: 1.6;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--primary);
+            text-decoration: none;
+        }
+        
+        .logo span {
+            color: var(--secondary);
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 30px;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        nav ul li a:hover {
+            color: var(--primary);
+        }
+        
+        .mobile-menu {
+            display: none;
+            font-size: 24px;
+            cursor: pointer;
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, #4f46e5, #7c3aed);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 30px;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: var(--secondary);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .btn:hover {
+            background-color: #0ca678;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        
+        .btn-outline {
+            background-color: transparent;
+            border: 2px solid white;
+            margin-left: 15px;
+        }
+        
+        .btn-outline:hover {
+            background-color: white;
+            color: var(--primary);
+        }
+        
+        section {
+            padding: 80px 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .section-title h2 {
+            font-size: 2rem;
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+        
+        .section-title p {
+            color: var(--gray);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .packages {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .package {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .package:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+        
+        .package-header {
+            padding: 20px;
+            text-align: center;
+            background-color: var(--primary);
+            color: white;
+        }
+        
+        .package-header h3 {
+            font-size: 1.5rem;
+            margin-bottom: 5px;
+        }
+        
+        .package-header .price {
+            font-size: 2rem;
+            font-weight: 700;
+        }
+        
+        .package-body {
+            padding: 30px;
+        }
+        
+        .package-body ul {
+            list-style: none;
+            margin-bottom: 30px;
+        }
+        
+        .package-body ul li {
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            align-items: center;
+        }
+        
+        .package-body ul li i {
+            color: var(--secondary);
+            margin-right: 10px;
+        }
+        
+        .package-featured {
+            border: 2px solid var(--secondary);
+            position: relative;
+        }
+        
+        .package-featured .featured-badge {
+            position: absolute;
+            top: -15px;
+            right: 20px;
+            background-color: var(--secondary);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+        
+        .ad-container {
+            background-color: #f1f5f9;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 40px 0;
+            text-align: center;
+            border: 1px dashed #cbd5e1;
+        }
+        
+        .ad-container p {
+            color: #64748b;
+            margin-bottom: 10px;
+            font-size: 0.9rem;
+        }
+        
+        .testimonials {
+            background-color: #f1f5f9;
+        }
+        
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .testimonial {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+        .testimonial .quote {
+            font-style: italic;
+            margin-bottom: 20px;
+            color: var(--dark);
+        }
+        
+        .testimonial .author {
+            display: flex;
+            align-items: center;
+        }
+        
+        .testimonial .author img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 15px;
+        }
+        
+        .author-info h4 {
+            font-size: 1rem;
+            margin-bottom: 5px;
+        }
+        
+        .author-info p {
+            font-size: 0.8rem;
+            color: var(--gray);
+        }
+        
+        .faq-item {
+            background-color: white;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+        }
+        
+        .faq-question {
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            font-weight: 600;
+        }
+        
+        .faq-question i {
+            transition: transform 0.3s;
+        }
+        
+        .faq-answer {
+            padding: 0 20px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s, padding 0.3s;
+        }
+        
+        .faq-item.active .faq-question i {
+            transform: rotate(180deg);
+        }
+        
+        .faq-item.active .faq-answer {
+            max-height: 500px;
+            padding: 0 20px 20px;
+        }
+        
+        footer {
+            background-color: var(--dark);
+            color: white;
+            padding: 60px 0 20px;
+        }
+        
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-col h3 {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        .footer-col h3::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 50px;
+            height: 2px;
+            background-color: var(--secondary);
+        }
+        
+        .footer-col ul {
+            list-style: none;
+        }
+        
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-col ul li a {
+            color: #cbd5e1;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-col ul li a:hover {
+            color: white;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+        }
+        
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: #334155;
+            border-radius: 50%;
+            color: white;
+            transition: all 0.3s;
+        }
+        
+        .social-links a:hover {
+            background-color: var(--secondary);
+            transform: translateY(-3px);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #334155;
+            color: #94a3b8;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .header-container {
+                padding: 15px;
+            }
+            
+            nav {
+                position: fixed;
+                top: 70px;
+                left: -100%;
+                width: 80%;
+                height: calc(100vh - 70px);
+                background-color: white;
+                box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+                transition: left 0.3s;
+                z-index: 99;
+            }
+            
+            nav.active {
+                left: 0;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                padding: 20px;
+            }
+            
+            nav ul li {
+                margin: 15px 0;
+            }
+            
+            .mobile-menu {
+                display: block;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero p {
+                font-size: 1rem;
+            }
+            
+            .btn {
+                padding: 10px 20px;
+            }
+            
+            section {
+                padding: 50px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">A2z<span>book</span>.In</a>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#home">होम</a></li>
+                    <li><a href="#packages">पैकेजेस</a></li>
+                    <li><a href="#testimonials">समीक्षा</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#contact">संपर्क</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu" id="mobileMenu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>ऑनलाइन पैसा कमाने की सीखें प्रोफेशनल स्किल्स</h1>
+            <p>A2zbook.In के प्रीमियम E-Book कोर्सेज के साथ डिजिटल दुनिया में सफलता की शुरुआत करें। हमारे विशेषज्ञों द्वारा डिज़ाइन किए गए कोर्सेज से आज ही सीखना शुरू करें।</p>
+            <a href="#packages" class="btn">कोर्स देखें</a>
+            <a href="#contact" class="btn btn-outline">संपर्क करें</a>
+        </div>
+    </section>
+    
+    <!-- AdSense Ad Unit -->
+    <div class="container">
+        <div class="ad-container">
+            <p>Advertisement</p>
+            <!-- Replace with your AdSense code -->
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-YOUR_PUBLISHER_ID"
+                crossorigin="anonymous"></script>
+            <!-- Your Ad Unit -->
+            <ins class="adsbygoogle"
+                style="display:block"
+                data-ad-client="ca-pub-YOUR_PUBLISHER_ID"
+                data-ad-slot="YOUR_AD_SLOT_ID"
+                data-ad-format="auto"
+                data-full-width-responsive="true"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+    </div>
+    
+    <section id="packages">
+        <div class="container">
+            <div class="section-title">
+                <h2>हमारे पैकेजेस</h2>
+                <p>अपनी जरूरत और बजट के अनुसार सही पैकेज चुनें और ऑनलाइन पैसा कमाना शुरू करें</p>
+            </div>
+            
+            <div class="packages">
+                <div class="package">
+                    <div class="package-header">
+                        <h3>Lite पैकेज</h3>
+                        <div class="price">₹499</div>
+                    </div>
+                    <div class="package-body">
+                        <ul>
+                            <li><i class="fas fa-check"></i> 5 बेसिक E-Books</li>
+                            <li><i class="fas fa-check"></i> ऑनलाइन पैसा कमाने के 10 तरीके</li>
+                            <li><i class="fas fa-check"></i> सप्ताहिक ईमेल सपोर्ट</li>
+                            <li><i class="fas fa-check"></i> बेसिक रिसोर्स मटेरियल</li>
+                        </ul>
+                        <a href="#" class="btn" style="width: 100%; text-align: center;">अभी खरीदें</a>
+                    </div>
+                </div>
+                
+                <div class="package">
+                    <div class="package-header" style="background-color: #6b7280;">
+                        <h3>Silver पैकेज</h3>
+                        <div class="price">₹1,499</div>
+                    </div>
+                    <div class="package-body">
+                        <ul>
+                            <li><i class="fas fa-check"></i> 10 प्रोफेशनल E-Books</li>
+                            <li><i class="fas fa-check"></i> फ्रीलांसिंग गाइड</li>
+                            <li><i class="fas fa-check"></i> वीडियो ट्यूटोरियल (10+ घंटे)</li>
+                            <li><i class="fas fa-check"></i> प्राथमिकता ईमेल सपोर्ट</li>
+                            <li><i class="fas fa-check"></i> टेम्पलेट्स और टूल्स</li>
+                        </ul>
+                        <a href="#" class="btn" style="width: 100%; text-align: center; background-color: #6b7280;">अभी खरीदें</a>
+                    </div>
+                </div>
+                
+                <div class="package package-featured">
+                    <div class="featured-badge">सबसे लोकप्रिय</div>
+                    <div class="package-header" style="background-color: #f59e0b;">
+                        <h3>Gold पैकेज</h3>
+                        <div class="price">₹2,999</div>
+                    </div>
+                    <div class="package-body">
+                        <ul>
+                            <li><i class="fas fa-check"></i> 15 प्रीमियम E-Books</li>
+                            <li><i class="fas fa-check"></i> फ्रीलांसिंग + डिजिटल मार्केटिंग</li>
+                            <li><i class="fas fa-check"></i> वीडियो ट्यूटोरियल (30+ घंटे)</li>
+                            <li><i class="fas fa-check"></i> लाइव Q&A सेशन (मासिक)</li>
+                            <li><i class="fas fa-check"></i> एक्सक्लूसिव टूल्स और टेम्पलेट्स</li>
+                            <li><i class="fas fa-check"></i> प्राथमिकता चैट सपोर्ट</li>
+                        </ul>
+                        <a href="#" class="btn" style="width: 100%; text-align: center; background-color: #f59e0b;">अभी खरीदें</a>
+                    </div>
+                </div>
+                
+                <div class="package">
+                    <div class="package-header" style="background-color: #14b8a6;">
+                        <h3>Diamond पैकेज</h3>
+                        <div class="price">₹4,999</div>
+                    </div>
+                    <div class="package-body">
+                        <ul>
+                            <li><i class="fas fa-check"></i> 25 प्रीमियम E-Books</li>
+                            <li><i class="fas fa-check"></i> कंप्लीट डिजिटल मार्केटिंग कोर्स</li>
+                            <li><i class="fas fa-check"></i> वीडियो ट्यूटोरियल (50+ घंटे)</li>
+                            <li><i class="fas fa-check"></i> वीकली लाइव सेशन</li>
+                            <li><i class="fas fa-check"></i> पर्सनलाइज्ड मेंटरिंग</li>
+                            <li><i class="fas fa-check"></i> प्रीमियम टूल्स एक्सेस</li>
+                        </ul>
+                        <a href="#" class="btn" style="width: 100%; text-align: center; background-color: #14b8a6;">अभी खरीदें</a>
+                    </div>
+                </div>
+                
+                <div class="package">
+                    <div class="package-header" style="background-color: #8b5cf6;">
+                        <h3>Platinum पैकेज</h3>
+                        <div class="price">₹7,999</div>
+                    </div>
+                    <div class="package-body">
+                        <ul>
+                            <li><i class="fas fa-check"></i> 40+ प्रीमियम E-Books</li>
+                            <li><i class="fas fa-check"></i> एडवांस्ड डिजिटल मार्केटिंग</li>
+                            <li><i class="fas fa-check"></i> वीडियो ट्यूटोरियल (100+ घंटे)</li>
+                            <li><i class="fas fa-check"></i> डेली लाइव सेशन</li>
+                            <li><i class="fas fa-check"></i> 1-ऑन-1 मेंटरिंग</li>
+                            <li><i class="fas fa-check"></i> सभी प्रीमियम टूल्स</li>
+                            <li><i class="fas fa-check"></i> जॉब प्लेसमेंट असिस्टेंस</li>
+                        </ul>
+                        <a href="#" class="btn" style="width: 100%; text-align: center; background-color: #8b5cf6;">अभी खरीदें</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Middle Ad Unit -->
+    <div class="container">
+        <div class="ad-container">
+            <p>Advertisement</p>
+            <!-- Replace with your AdSense code -->
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-YOUR_PUBLISHER_ID"
+                crossorigin="anonymous"></script>
+            <!-- Your Ad Unit -->
+            <ins class="adsbygoogle"
+                style="display:block"
+                data-ad-client="ca-pub-YOUR_PUBLISHER_ID"
+                data-ad-slot="YOUR_AD_SLOT_ID"
+                data-ad-format="auto"
+                data-full-width-responsive="true"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+    </div>
+    
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>हमारे छात्र क्या कहते हैं</h2>
+                <p>हमारे छात्रों की सफलता की कहानियाँ जो A2zbook.In के कोर्सेज से ऑनलाइन पैसा कमा रहे हैं</p>
+            </div>
+            
+            <div class="testimonial-grid">
+                <div class="testimonial">
+                    <p class="quote">"A2zbook के Gold पैकेज ने मुझे फ्रीलांसिंग शुरू करने में मदद की। अब मैं हर महीने 50,000+ रुपये कमा रहा हूँ। धन्यवाद!"</p>
+                    <div class="author">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="राहुल शर्मा">
+                        <div class="author-info">
+                            <h4>राहुल शर्मा</h4>
+                            <p>फ्रीलांसर, ग्राफिक डिजाइनर</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial">
+                    <p class="quote">"Diamond पैकेज के डिजिटल मार्केटिंग कोर्स ने मेरे बिजनेस को नई ऊँचाइयों पर पहुँचाया। ROI 300% से अधिक!"</p>
+                    <div class="author">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="प्रिया पटेल">
+                        <div class="author-info">
+                            <h4>प्रिया पटेल</h4>
+                            <p>छोटा व्यवसाय मालिक</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial">
+                    <p class="quote">"Platinum पैकेज में 1-ऑन-1 मेंटरिंग बेहतरीन थी। 3 महीने में मैंने अपना खुद का डिजिटल एजेंसी शुरू कर दी!"</p>
+                    <div class="author">
+                        <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="विकास गुप्ता">
+                        <div class="author-info">
+                            <h4>विकास गुप्ता</h4>
+                            <p>डिजिटल मार्केटिंग एजेंसी के मालिक</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="faq">
+        <div class="container">
+            <div class="section-title">
+                <h2>अक्सर पूछे जाने वाले प्रश्न</h2>
+                <p>हमारे छात्रों द्वारा पूछे गए सामान्य प्रश्न और उनके उत्तर</p>
+            </div>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>मैं कोर्स मटेरियल कैसे एक्सेस करूँगा?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>पेमेंट कंफर्म होने के बाद, आपको एक विशेष लिंक के साथ एक ईमेल प्राप्त होगा जहाँ आप सभी E-Books और कोर्स मटेरियल डाउनलोड कर सकते हैं। आप हमारे सदस्य क्षेत्र में लॉग इन करके भी सामग्री तक पहुँच सकते हैं।</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>क्या मैं पैकेज अपग्रेड कर सकता हूँ?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>हाँ, आप किसी भी समय अपना पैकेज अपग्रेड कर सकते हैं। आपको केवल दो पैकेजों के बीच के मूल्य अंतर का भुगतान करना होगा। कृपया हमारे सपोर्ट टीम से संपर्क करें और हम आपकी मदद करेंगे।</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>क्या कोई रिफंड पॉलिसी है?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>हम 7-दिन की मनी-बैक गारंटी प्रदान करते हैं। यदि आप संतुष्ट नहीं हैं, तो आप खरीद की तारीख से 7 दिनों के भीतर पूर्ण धनवापसी के लिए अनुरोध कर सकते हैं।</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>क्या मैं कोर्स ऑफलाइन एक्सेस कर सकता हूँ?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>हाँ, सभी E-Books और वीडियो को डाउनलोड किया जा सकता है ताकि आप उन्हें बिना इंटरनेट कनेक्शन के भी एक्सेस कर सकें।</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>क्या मुझे कोई पूर्व अनुभव चाहिए?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>नहीं, हमारे सभी पैकेज बिगिनर-फ्रेंडली हैं। Lite पैकेज बिल्कुल शुरुआती लोगों के लिए डिज़ाइन किया गया है, जबकि उच्च पैकेज अधिक अनुभवी उपयोगकर्ताओं के लिए उपयुक्त हैं।</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Bottom Ad Unit -->
+    <div class="container">
+        <div class="ad-container">
+            <p>Advertisement</p>
+            <!-- Replace with your AdSense code -->
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-YOUR_PUBLISHER_ID"
+                crossorigin="anonymous"></script>
+            <!-- Your Ad Unit -->
+            <ins class="adsbygoogle"
+                style="display:block"
+                data-ad-client="ca-pub-YOUR_PUBLISHER_ID"
+                data-ad-slot="YOUR_AD_SLOT_ID"
+                data-ad-format="auto"
+                data-full-width-responsive="true"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+    </div>
+    
+    <section id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>हमसे संपर्क करें</h2>
+                <p>किसी भी प्रश्न या सहायता के लिए हमारी टीम से संपर्क करें</p>
+            </div>
+            
+            <div style="background-color: white; padding: 30px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+                <form id="contactForm" style="display: grid; gap: 20px;">
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                        <div>
+                            <label for="name" style="display: block; margin-bottom: 8px; font-weight: 500;">आपका नाम</label>
+                            <input type="text" id="name" name="name" required style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px;">
+                        </div>
+                        <div>
+                            <label for="email" style="display: block; margin-bottom: 8px; font-weight: 500;">ईमेल पता</label>
+                            <input type="email" id="email" name="email" required style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px;">
+                        </div>
+                    </div>
+                    <div>
+                        <label for="subject" style="display: block; margin-bottom: 8px; font-weight: 500;">विषय</label>
+                        <input type="text" id="subject" name="subject" required style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px;">
+                    </div>
+                    <div>
+                        <label for="message" style="display: block; margin-bottom: 8px; font-weight: 500;">संदेश</label>
+                        <textarea id="message" name="message" rows="5" required style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px;"></textarea>
+                    </div>
+                    <button type="submit" class="btn" style="justify-self: start;">संदेश भेजें</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>A2zbook.In</h3>
+                    <p>ऑनलाइन पैसा कमाने के प्रोफेशनल कोर्सेज और E-Books प्रदान करने वाली भारत की अग्रणी कंपनी।</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>लिंक्स</h3>
+                    <ul>
+                        <li><a href="#home">होम</a></li>
+                        <li><a href="#packages">पैकेजेस</a></li>
+                        <li><a href="#testimonials">समीक्षा</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#contact">संपर्क</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>पैकेजेस</h3>
+                    <ul>
+                        <li><a href="#">Lite पैकेज</a></li>
+                        <li><a href="#">Silver पैकेज</a></li>
+                        <li><a href="#">Gold पैकेज</a></li>
+                        <li><a href="#">Diamond पैकेज</a></li>
+                        <li><a href="#">Platinum पैकेज</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>संपर्क</h3>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> support@a2zbook.in</li>
+                        <li><i class="fas fa-phone"></i> +91 9876543210</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 बिजनेस पार्क, मुंबई, भारत</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 A2zbook.In. सर्वाधिकार सुरक्षित।</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenu = document.getElementById('mobileMenu');
+        const nav = document.getElementById('nav');
+        
+        mobileMenu.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+        
+        // FAQ Accordion
+        const faqItems = document.querySelectorAll('.faq-item');
+        
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            
+            question.addEventListener('click', () => {
+                // Close other open items
+                faqItems.forEach(otherItem => {
+                    if (otherItem !== item && otherItem.classList.contains('active')) {
+                        otherItem.classList.remove('active');
+                    }
+                });
+                
+                // Toggle current item
+                item.classList.toggle('active');
+            });
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 70,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    if (nav.classList.contains('active')) {
+                        nav.classList.remove('active');
+                    }
+                }
+            });
+        });
+        
+        // Form submission
+        const contactForm = document.getElementById('contactForm');
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Get form values
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const subject = document.getElementById('subject').value;
+                const message = document.getElementById('message').value;
+                
+                // Here you would typically send the data to a server
+                // For demo, we'll just show an alert
+                alert(`धन्यवाद ${name}! आपका संदेश प्राप्त हुआ। हम जल्द ही आपसे संपर्क करेंगे।`);
+                
+                // Reset form
+                contactForm.reset();
+            });
+        }
+    </script>
+</body>
+</html>
